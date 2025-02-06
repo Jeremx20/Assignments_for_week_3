@@ -13,3 +13,16 @@
 
 # Problem 3: Write a program that takes a list of numbers and prints out the largest number in the list.
 
+def calculate_stats(numbers):
+    
+    total = sum(numbers)
+    average = total / len(numbers)
+    largest = max(numbers)
+
+    print(f"sum : {total}")
+    print(f"average : {average}")
+    print(f"the largest: {largest}")
+
+
+numbers = [1, 2, 3, 4, 5]
+calculate_stats(numbers)
