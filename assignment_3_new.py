@@ -14,6 +14,9 @@
 # Problem 3: Write a program that takes a list of numbers and prints out the largest number in the list.
 
 def calculate_stats(numbers):
+    if not numbers:
+        print("There's no number")
+        return
     
     total = sum(numbers)
     average = total / len(numbers)
